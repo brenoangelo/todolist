@@ -1,3 +1,4 @@
+import './style/App.css'
 import react from 'react'
 
 export default () => (
