@@ -1,17 +1,78 @@
 @charset "UTF-8";
-/*importando o css de outros components*/
+/*importando*/
+/*reset*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/*CORES*/
-/*Utilitários*/
+/*variáveis*/
+/*Cores*/
+/*Padding*/
+/*utilitários*/
 .container {
   max-width: 900px;
-  padding: 0 2%;
   margin: 0 auto;
+  padding: 0 2%;
+}
+
+.app {
+  /*BodyTodo.jsx*/
+}
+
+.app .todo-container {
+  background-color: #1d3557;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.app .todo-container h1 {
+  color: #ececec;
+  text-align: center;
+}
+
+.app header {
+  background-color: #1d3557;
+  color: #ececec;
+  padding: 15px;
+}
+
+.app header .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app header .menu nav span {
+  font-size: 22px;
+}
+
+.app header .menu nav ul li {
+  list-style-type: none;
+}
+
+.app header .menu nav ul li a {
+  text-decoration: none;
+  color: #ececec;
+  background-color: #e53945;
+  border: 3px solid #e53945;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.app header .menu nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ececec;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

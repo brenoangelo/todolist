@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*variáveis*/
+/*Cores*/
+/*Padding*/
+/*utilitários*/
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+/*# sourceMappingURL=utilities.css.map */
