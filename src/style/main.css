@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*importando o css de outros components*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*CORES*/
+/*Utilitários*/
+.container {
+  max-width: 900px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

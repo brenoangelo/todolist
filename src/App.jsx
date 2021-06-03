@@ -1,8 +1,11 @@
-import './style/App.css'
-import react from 'react'
+import React from 'react'
+
+import BodyTodo from './components/layout/BodyTodo'
 
 export default () => (
     <div id="app">
-        teste
+        <BodyTodo>
+            <h1>Titulo</h1>
+        </BodyTodo>
     </div>
 )
