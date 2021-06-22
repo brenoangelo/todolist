@@ -11,68 +11,94 @@
 
 /*variáveis*/
 /*Cores*/
-/*Padding*/
-/*utilitários*/
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2%;
+body {
+  background: linear-gradient(38deg, #eeaeca 0%, #94bbe9 100%);
 }
 
 .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /*BodyTodo.jsx*/
 }
 
 .app .todo-container {
-  background-color: #1d3557;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
   margin-top: 50px;
 }
 
-.app .todo-container h1 {
-  color: #ececec;
-  text-align: center;
-}
-
-.app header {
-  background-color: #1d3557;
-  color: #ececec;
-  padding: 15px;
-}
-
-.app header .menu nav {
+.app .todo-container .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 400px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
 }
 
-.app header .menu nav span {
-  font-size: 22px;
+.app .todo-container .header h1 {
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
 }
 
-.app header .menu nav ul li {
+.app .todo-container .header .ButtonAdd {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 42px;
+  border-radius: 20px;
+  background-color: #9020FE;
+  color: white;
+  padding: 20px;
+}
+
+.app .todo-container .header .ButtonAdd:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.app .todo-container .content ul li {
   list-style-type: none;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 70px;
 }
 
-.app header .menu nav ul li a {
-  text-decoration: none;
-  color: #ececec;
-  background-color: #e53945;
-  border: 3px solid #e53945;
-  padding: 5px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 400;
+.app .todo-container .content ul li i {
+  cursor: pointer;
 }
 
-.app header .menu nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: #ececec;
+.app .todo-container .content ul li i:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=main.css.map */

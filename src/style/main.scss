@@ -1,57 +1,74 @@
 /*importando*/
 @import "utilities";
 
+body{ background: $background-gradient;}
+
 .app{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
     /*BodyTodo.jsx*/
     .todo-container{
-        background-color: $cor-azulEscuro;
-        padding: 20px;
-        border-radius: 10px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
         margin-top: 50px;
-
-        h1{
-            color: $cor-branco;
-            text-align: center;
-        }
-    }
-
-    header{
-        background-color: $cor-azulEscuro;
-        color: $cor-branco;
-        padding: 15px;
-        .menu{
-            nav{
+        
+        .header{
+            display: flex;
+            min-width: 400px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            h1{
+                color: $preto;
+                font-weight: bold;
+                text-align: center;
+                font-size: 50px;
+                
+            }
+    
+            .ButtonAdd{
+                cursor: pointer;
+                width: 80px;
+                height: 80px;
                 display: flex;
-                justify-content: space-between;
-    
-                span{
-                    font-size: 22px;
-                }
-    
-                ul{
-                    li{
-                        list-style-type: none;
-                        a{
-                            text-decoration: none;
-                            color: $cor-branco;
-                            background-color: $cor-vermelho;
-                            border: 3px solid $cor-vermelho;
-                            padding: 5px 20px;
-                            border-radius: 5px;
-                            font-size: 18px;
-                            font-weight: 400;
-                        }
-                        a:hover{
-                            background-color: rgba(0,0,0, .0);
-                            color: $cor-branco;
-                            transition: 0.3s;
-                            
-                        }
+                align-items: center;
+                justify-content: center;
+                font-size: 42px;
+                border-radius: 20px;
+                background-color: #9020FE;
+                color: white;
+                padding: 20px;
+            }
+            .ButtonAdd:hover{
+                transition: 0.2s;
+                -webkit-box-shadow: -1px 7px 15px 5px rgba(0,0,0,0.3); 
+                box-shadow: -1px 7px 15px 5px rgba(0,0,0,0.3);
+            }
+        }
+
+        .content{
+            ul{
+                li{
+                    
+                    list-style-type: none;
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 70px;
+                    i{
+                        cursor: pointer;
                     }
+                    i:hover{
+                        transition: 0.3s;
+                        transform: scale(1.2);
+                    }
+                    
                 }
             }
         }
-    
+        
     }
     
 }

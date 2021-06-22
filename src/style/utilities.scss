@@ -3,13 +3,10 @@
 
 /*variáveis*/
     /*Cores*/
-    $cor-azulEscuro:#1d3557;
+    $preto :#333;
     $cor-branco:#ececec;
     $cor-palha:#dab785;
     $cor-vermelho:#e53945;
+    $background-gradient: linear-gradient(38deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
-    /*Padding*/
     
-
-/*utilitários*/
-.container{max-width: 900px;margin: 0 auto;padding: 0 2%;}
