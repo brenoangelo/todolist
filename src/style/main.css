@@ -36,6 +36,13 @@ body {
   margin-top: 50px;
 }
 
+.app .todo-container h1 {
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  font-size: 50px;
+}
+
 .app .todo-container .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,17 +57,10 @@ body {
   margin-bottom: 10px;
 }
 
-.app .todo-container .header h1 {
-  color: #333;
-  font-weight: bold;
-  text-align: center;
-  font-size: 50px;
-}
-
 .app .todo-container .header .ButtonAdd {
   cursor: pointer;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,24 +71,55 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 42px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #9020FE;
   color: white;
   padding: 20px;
+  border: 2px solid #9020FE;
 }
 
 .app .todo-container .header .ButtonAdd:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: -1px 7px 15px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: #9020FE;
+}
+
+.app .todo-container .header .input input {
+  font-size: 28px;
+  border: 0;
+  background-color: rgba(220, 220, 220, 0.3);
+  border-radius: 10px;
+  padding-left: 10px;
+  line-height: 58px;
+}
+
+.app .todo-container .header .input input:focus {
+  outline: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .app .todo-container .content ul li {
   list-style-type: none;
   font-size: 28px;
-  font-weight: 500;
-  line-height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+}
+
+.app .todo-container .content ul li span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 10px;
 }
 
 .app .todo-container .content ul li i {
@@ -100,5 +131,18 @@ body {
   transition: 0.3s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.concluida span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.concluida i {
+  color: gray;
+}
+
+.concluida i.trash {
+  color: #EF767A;
 }
 /*# sourceMappingURL=main.css.map */

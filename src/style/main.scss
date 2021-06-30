@@ -3,6 +3,8 @@
 
 body{ background: $background-gradient;}
 
+
+
 .app{
     display: flex;
     height: 100vh;
@@ -14,6 +16,14 @@ body{ background: $background-gradient;}
         padding: 30px;
         border-radius: 30px;
         margin-top: 50px;
+
+        h1{
+            color: $preto;
+            font-weight: bold;
+            text-align: left;
+            font-size: 50px;
+            
+        }
         
         .header{
             display: flex;
@@ -21,49 +31,71 @@ body{ background: $background-gradient;}
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
-            h1{
-                color: $preto;
-                font-weight: bold;
-                text-align: center;
-                font-size: 50px;
-                
-            }
+            
     
             .ButtonAdd{
                 cursor: pointer;
-                width: 80px;
-                height: 80px;
+                width: 60px;
+                height: 60px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 42px;
-                border-radius: 20px;
+                border-radius: 10px;
                 background-color: #9020FE;
                 color: white;
                 padding: 20px;
+                border: 2px solid #9020FE;
             }
             .ButtonAdd:hover{
                 transition: 0.2s;
-                -webkit-box-shadow: -1px 7px 15px 5px rgba(0,0,0,0.3); 
-                box-shadow: -1px 7px 15px 5px rgba(0,0,0,0.3);
+                background-color: white;
+                color: #9020FE;
+                
+            }
+
+            .input input{
+                font-size: 28px;
+                border: 0;
+                background-color: rgba(220,220,220, 0.3);
+                border-radius: 10px;
+                padding-left: 10px;
+                line-height: 58px;
+            }
+            .input input:focus{
+                outline: 0;
+                
+                
+                transition: 0.3s;
+                
             }
         }
 
         .content{
             ul{
+                
+                
                 li{
                     
                     list-style-type: none;
                     font-size: 28px;
-                    font-weight: 500;
-                    line-height: 70px;
+                    align-items: center;
+                    justify-content: space-between;
+                    display: flex;
+                    margin: 20px 0;
+                    span{
+                        flex: 1;
+                        margin-left: 10px;
+                    }
                     i{
                         cursor: pointer;
+                        
                     }
                     i:hover{
                         transition: 0.3s;
                         transform: scale(1.2);
                     }
+   
                     
                 }
             }
@@ -72,3 +104,21 @@ body{ background: $background-gradient;}
     }
     
 }
+
+.concluida{
+    
+    span{
+        text-decoration: line-through;
+        color: gray;
+    }
+
+    i{
+        color: gray;
+    }
+
+    i.trash{
+        color: #EF767A;
+        
+    }
+}
+

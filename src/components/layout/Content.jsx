@@ -1,13 +1,16 @@
 import React from 'react'
 
-export default ()=>{
-    return(
+export default (props) => {
+
+
+    return (
         <div className="content">
+
             <ul>
-                <li><i class="far fa-check-circle"></i> Estudar</li>
-                <li><i class="far fa-check-circle"></i> Ler</li>
-                <li><i class="far fa-check-circle"></i> Correr</li>
+                {props.listaTarefas()}
             </ul>
+
+
         </div>
     )
 }
