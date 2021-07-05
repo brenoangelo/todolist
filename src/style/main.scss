@@ -2,37 +2,50 @@
 @import "utilities";
 
 body{ background: $background-gradient;}
-
-
-
 .app{
+    width: 100%;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     align-items: center;
     justify-content: center;
+    padding: 0 2%;
     /*BodyTodo.jsx*/
     .todo-container{
+        width: 100%;
+        max-width: 500px;
         background-color: white;
         padding: 30px;
         border-radius: 30px;
-        margin-top: 50px;
+        margin: 15px 0;
+
+        .painel_contador{
+            text-align: center;
+
+            h3{
+                font-size: 20px;
+            }
+
+            
+        }
+        
 
         h1{
             color: $preto;
             font-weight: bold;
             text-align: left;
-            font-size: 50px;
-            
+            font-size: 3.5rem;
+
         }
         
         .header{
             display: flex;
-            min-width: 400px;
+            max-width: 400px;
+            width: 100%;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 10px;
             
-    
             .ButtonAdd{
                 cursor: pointer;
                 width: 60px;
@@ -55,7 +68,8 @@ body{ background: $background-gradient;}
             }
 
             .input input{
-                font-size: 28px;
+                width: 100%;
+                font-size: 1.6rem;
                 border: 0;
                 background-color: rgba(220,220,220, 0.3);
                 border-radius: 10px;
@@ -64,21 +78,17 @@ body{ background: $background-gradient;}
             }
             .input input:focus{
                 outline: 0;
-                
-                
                 transition: 0.3s;
-                
             }
         }
 
         .content{
             ul{
                 
-                
                 li{
                     
                     list-style-type: none;
-                    font-size: 28px;
+                    font-size: 1.8rem;
                     align-items: center;
                     justify-content: space-between;
                     display: flex;

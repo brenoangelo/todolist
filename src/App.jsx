@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 
+import Contador from './components/Contador'
 import Content from './components/Content'
 import Input from './components/Input'
 import BodyTodo from './components/layout/BodyTodo'
+
 
 export default function App(){
 
@@ -56,6 +58,13 @@ export default function App(){
  
             <div className="container">
                 <BodyTodo>
+                    <Contador tarefas={tarefas}/>
+                </BodyTodo>
+                
+                <BodyTodo>
+                    
+                    <h1>To-do</h1>
+                    
                     <div className="header">
                         <Input addTarefa={addTarefa}/>
                     </div>

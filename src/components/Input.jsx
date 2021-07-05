@@ -7,7 +7,7 @@ export default function Input(props) {
     return (
         <>
             <div className="input">
-                <input type="text" placeholder="Sua tarefa aqui..."
+                <input type="text" placeholder="Sua tarefa..."
                     value={text}
                     onChange={e => setText(e.target.value)}
                     maxLength={17}
