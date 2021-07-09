@@ -75,7 +75,16 @@ export default function App(){
                     />
                 </BodyTodo>
             </div>
-        
+
+
+            <footer>
+                <div class="container">
+                    <h4>Desenvolvido por <a href="https://github.com/brenoangelo" 
+                    target="_blank">
+                        <i class="fab fa-github"></i> Breno Angelo</a>
+                    </h4>
+                </div>
+            </footer>
         </div>
     )
 }
